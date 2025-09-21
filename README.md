@@ -65,23 +65,6 @@ Overview DuckLake lakehouse:
 
 ---
 
-## Config
-
-Edita `.env`:
-
-- Storage: `DL_STORAGE=s3` (MinIO) or `DL_STORAGE=local` # Mæli með s3
-- Local path: `DL_DATA_PATH=data/`
-- MinIO:
-  - `DL_S3_BUCKET`, `DL_S3_PREFIX`, `DL_S3_REGION`
-  - `DL_S3_ENDPOINT` (container side), `DL_S3_HOST_ENDPOINT` (notebook side)
-  - `S3_URL_STYLE=path`, `S3_USE_SSL=false`
-- Postgres: `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`, `POSTGRES_PORT`
-- Lake alias: `DUCKLAKE_NAME`
-- App-Postgres DSN: `DL_PG_CONN`
-
-
----
-
 ## References
 
 - DuckLake — https://ducklake.select/
