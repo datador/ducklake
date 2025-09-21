@@ -10,23 +10,21 @@ Overview DuckLake lakehouse:
 ## Quick Start
 
 1. **Configure**
-   - Breyta `.env` (velja `DL_STORAGE=s3` or `local`).
    - Breyta um password í MINIO_ROOT_PASSWORD
+   - (Optional) Breyta `.env` (velja `DL_STORAGE=s3` eða `local`).
 
 2. **Keyra upp projectið**
    - clone'a projectið í viðeigandi möppu og hafa terminal í rótinni tilbúið
    - Keyra: `docker compose up --build`
-Valkvætt:
-   - Hægt er að skoða MinIO UI: `http://localhost:9001` (login með user:pass í `.env`)
+   - (Optional) Hægt er að skoða MinIO UI: `http://localhost:9001` (login með user:pass í `.env`)
 
 3. **Setja upp virtual environment og installa pökkum (fyrir Notebooks)**
-
    - Uppsetning með UV: `uv sync`
    - Uppsetning með virtulenv: `python -m venv .venv && source .venv/bin/activate` síðan `pip install -e .`
    - *(Windows: `.venv\Scripts\activate`)*
 
 4. **Keyra notebooks**
-   - VS Code or Jupyter → run the cells.  
+   - Opna notebook/ducklake_demo.ipynb og keyra
 
 ---
 
