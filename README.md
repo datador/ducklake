@@ -32,21 +32,26 @@ Valkvætt:
 
 ## Strúktúr
 
+```text
+.
 ├─ .env
+├─ .gitignore
+├─ .python-version
+├─ README.md
 ├─ docker-compose.yml
-├─ data/
-├─ notebooks/
-│ ├─ ducklake_demo.ipynb
+├─ pyproject.toml
+├─ uv.lock
 ├─ app/
-│ ├─ app.py
-│ ├─ requirements.txt
-│ └─ Dockerfile
+│  ├─ Dockerfile
+│  ├─ requirements.txt
+│  └─ app.py
+├─ notebooks/
+│  └─ ducklake_demo.ipynb
 └─ src/
-└─ ducklake/
-├─ init.py
-└─ setup.p
-pyproject.toml
-
+   └─ ducklake/
+      ├─ __init__.py
+      └─ setup.py
+```
 
 - **Catalog** með Postgres.
 - **Data files** MinIO (`s3://<bucket>/<prefix>/…`) eða local `./data/`
